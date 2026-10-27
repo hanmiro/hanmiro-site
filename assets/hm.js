@@ -136,6 +136,7 @@
       .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { if (!r.ok || j.success === 'false' || j.success === false) throw new Error(j.message || r.status); }); })
       .then(function () {
         note.style.color = 'var(--ink)'; note.textContent = cfg.msg.ok;
+        if (typeof window.gtag === 'function') window.gtag('event', 'conversion', { send_to: 'AW-18505185169/ATSFCJjEh5odEJHv-vdE' });
         fields.forEach(function (el) { el.value = ''; });
       })
       .catch(function () { note.style.color = 'var(--accent)'; note.textContent = cfg.msg.fail; })
