@@ -546,11 +546,10 @@ section[id]{scroll-margin-top:68px}
                 <span style="font-size: 15px; font-weight: 600">info@hanmiro.kr</span>
               </div>
             
-              <div style="background: rgba(255,255,255,0.12); border-radius: 16px; padding: 14px 16px; display: flex; flex-direction: column; gap: 2px; min-height: 44px">
-                <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.08em; color: #FFC9D1">WhatsApp</span>
-                <span style="font-size: 15px; font-weight: 600">+82 10-4851-1319</span>
-              </div>
-            
+            <a href="https://wa.me/821048511319" target="_blank" rel="noopener" style="background: rgba(255,255,255,0.12); border-radius: 16px; padding: 12px 14px; display: flex; align-items: center; gap: 12px; color: inherit; text-decoration: none">
+              <img loading="lazy" decoding="async" src="/assets/whatsapp-qr.png" alt="WhatsApp QR code" width="64" height="64" style="flex: none; width: 64px; height: 64px; border-radius: 8px; background: #fff">
+              <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.08em; color: #FFC9D1">WhatsApp</span>
+            </a>
           </div>
         </div>
         <img loading="lazy" decoding="async" src="/assets/img/89d9d166ff9d.webp" alt="Chef drizzling sauce" style="display: block; width: 100%; object-fit: cover; min-height: 360px; height: 100%; border-radius: 0">
@@ -576,7 +575,7 @@ section[id]{scroll-margin-top:68px}
       <div style="flex: 1 1 260px; display: flex; flex-direction: column">
         <div style="color: var(--ink); font-weight: 700">WEIHAI HANMIRO FOOD CO., LTD.</div>
         <div>No. 16, Fugeng Road, Rongcheng City, Weihai, Shandong, China</div>
-        <div>Tel +86 135 5309 9791 · WhatsApp +82 10-4851-1319 · info@hanmiro.kr</div>
+        <div>Tel +86 135 5309 9791 · <a href="/en/contact#channels" style="color: inherit">WhatsApp (QR)</a> · info@hanmiro.kr</div>
       </div>
     </div>
   </footer>
@@ -856,6 +855,10 @@ section[id]{scroll-margin-top:68px}
                 <span style="font-size: 15px; font-weight: 600">{{c.v}}</span>
               </div>
             </sc-for>
+            <a href="https://wa.me/821048511319" target="_blank" rel="noopener" style="background: rgba(255,255,255,0.12); border-radius: 16px; padding: 12px 14px; display: flex; align-items: center; gap: 12px; color: inherit; text-decoration: none">
+              <img loading="lazy" decoding="async" src="/assets/whatsapp-qr.png" alt="WhatsApp QR code" width="64" height="64" style="flex: none; width: 64px; height: 64px; border-radius: 8px; background: #fff">
+              <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.08em; color: #FFC9D1">WhatsApp</span>
+            </a>
           </div>
         </div>
         <img loading="lazy" decoding="async" src="/assets/img/89d9d166ff9d.webp" alt="Chef drizzling sauce" style="display: block; width: 100%; object-fit: cover; min-height: 360px; height: 100%; border-radius: 0">
@@ -881,7 +884,7 @@ section[id]{scroll-margin-top:68px}
       <div style="flex: 1 1 260px; display: flex; flex-direction: column">
         <div style="color: var(--ink); font-weight: 700">WEIHAI HANMIRO FOOD CO., LTD.</div>
         <div>No. 16, Fugeng Road, Rongcheng City, Weihai, Shandong, China</div>
-        <div>Tel +86 135 5309 9791 · WhatsApp +82 10-4851-1319 · info@hanmiro.kr</div>
+        <div>Tel +86 135 5309 9791 · <a href="/en/contact#channels" style="color: inherit">WhatsApp (QR)</a> · info@hanmiro.kr</div>
       </div>
     </div>
   </footer>
@@ -1010,8 +1013,7 @@ class Component extends DCLogic {
       ],
       channels: [
         { k: 'Phone', v: '+86 135 5309 9791' },
-        { k: 'Email', v: 'info@hanmiro.kr' },
-        { k: 'WhatsApp', v: '+82 10-4851-1319' }
+        { k: 'Email', v: 'info@hanmiro.kr' }
       ]
     };
   }
