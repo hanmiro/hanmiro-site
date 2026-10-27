@@ -1,2 +1,4 @@
-/assets/*
-  Cache-Control: public, max-age=604800
+/assets/img/*
+  Cache-Control: public, max-age=31536000, immutable
+/assets/hm.js
+  Cache-Control: public, max-age=86400
