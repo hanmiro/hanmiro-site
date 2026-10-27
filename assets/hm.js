@@ -137,6 +137,7 @@
       .then(function () {
         note.style.color = 'var(--ink)'; note.textContent = cfg.msg.ok;
         if (typeof window.gtag === 'function') window.gtag('event', 'conversion', { send_to: 'AW-18505185169/ATSFCJjEh5odEJHv-vdE' });
+        if (typeof window.gtag === 'function') window.gtag('event', 'generate_lead', { form_language: document.documentElement.lang, inquiry_type: kind || 'none' });
         fields.forEach(function (el) { el.value = ''; });
       })
       .catch(function () { note.style.color = 'var(--accent)'; note.textContent = cfg.msg.fail; })
